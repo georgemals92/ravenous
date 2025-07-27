@@ -9,13 +9,21 @@ export default function Business(props) {
                 src= {props.data.image}
             />
             <h1 className = {styles.businessTitle}>{props.data.name}</h1>
-            <p>{props.data.address}</p>
-            <p>{props.data.city}</p>
-            <p>{props.data.state}</p>
-            <p>{props.data.zipcode}</p>
-            <p>{props.data.category}</p>
-            <p>{props.data.rating}</p>
-            <p>{props.data.reviewCount}</p>
+            <div className={styles.cardBody}>
+                <div className = {styles.addressInfo}>
+                    <p>{props.data.address}</p>
+                    <p>{props.data.city}</p>
+                    <div>
+                        <span>{props.data.state}</span>
+                        <span>{props.data.zipCode}</span>
+                    </div>
+                </div>
+                <div className={styles.ratingInfo}>
+                    <p className= {styles.category}>{props.data.category}</p>
+                    <p className= {styles.rating}>{props.data.rating} stars</p>
+                    <p>{props.data.reviewCount} reviews</p>
+                </div>
+            </div>
         </div>
     );
 }

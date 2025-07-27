@@ -8,7 +8,7 @@ const businessData =[
         address: "1010 Paddington Way",
         city: "Bordertown",
         state: "NY",
-        zipcode: 10101,
+        zipCode: 10101,
         category: "Italian",
         rating: 4.5,
         reviewCount: 90
@@ -19,7 +19,7 @@ const businessData =[
         address: "1011 Paddington Way",
         city: "Bordertown",
         state: "NY",
-        zipcode: 10102,
+        zipCode: 10102,
         category: "Italian",
         rating: 4.5,
         reviewCount: 90
@@ -30,7 +30,62 @@ const businessData =[
         address: "1012 Paddington Way",
         city: "Bordertown",
         state: "NY",
-        zipcode: 10103,
+        zipCode: 10103,
+        category: "Italian",
+        rating: 4.5,
+        reviewCount: 90
+    }, 
+    {
+        image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+        name: "MarginOtto Pizza",
+        address: "1010 Paddington Way",
+        city: "Bordertown",
+        state: "NY",
+        zipCode: 10101,
+        category: "Italian",
+        rating: 4.5,
+        reviewCount: 90
+    }, 
+    {
+        image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+        name: "MarginOtto Pizza",
+        address: "1011 Paddington Way",
+        city: "Bordertown",
+        state: "NY",
+        zipCode: 10102,
+        category: "Italian",
+        rating: 4.5,
+        reviewCount: 90
+    },
+    {
+        image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+        name: "MarginOtto Pizza",
+        address: "1012 Paddington Way",
+        city: "Bordertown",
+        state: "NY",
+        zipCode: 10103,
+        category: "Italian",
+        rating: 4.5,
+        reviewCount: 90
+    }, 
+    {
+        image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+        name: "MarginOtto Pizza",
+        address: "1011 Paddington Way",
+        city: "Bordertown",
+        state: "NY",
+        zipCode: 10102,
+        category: "Italian",
+        rating: 4.5,
+        reviewCount: 90
+    },
+    {
+        image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
+        name: "MarginOtto Pizza",
+        address: "1012 Paddington Way",
+        city: "Bordertown",
+        state: "NY",
+        zipCode: 10103,
         category: "Italian",
         rating: 4.5,
         reviewCount: 90

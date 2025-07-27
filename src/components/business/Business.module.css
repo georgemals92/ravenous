@@ -1,24 +1,62 @@
-*{
-    margin-top: 2px;
-    margin-bottom: 2px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .businessCard{
     display: flex;
     flex-direction: column;
-    border: 1px solid #f2f2f2;
     border-radius: 5px;
     width: 250px;
-    height: 400px;
     padding: 15px 10px;
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 .cardImage{
     width: 100%;
+    border-radius: 2px;
 }
 
-.businessTitle{
-    font-size: 16px;
+h1{
+    font-size: 18px;
+    margin: 12px 0;
 }
 
+.cardBody{
+    display: flex;
+    justify-items: left;
+}
+
+.addressInfo{
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    text-align: left;   
+}
+
+.ratingInfo{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    flex: 4;
+}
+
+p, span, .addressInfo>div {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 4px;
+}
+
+span{
+    margin-left: 0;
+}
+
+.category{
+    color: goldenrod;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rating{
+    color: goldenrod;
+}
