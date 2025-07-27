@@ -1,9 +1,15 @@
+*{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 .businessCard{
     display: flex;
     flex-direction: column;
     border: 1px solid #f2f2f2;
     border-radius: 5px;
     width: 250px;
+    height: 400px;
     padding: 15px 10px;
     margin: 20px;
 }
