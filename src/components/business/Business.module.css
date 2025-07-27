@@ -1,0 +1,18 @@
+.businessCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    width: 250px;
+    padding: 15px 10px;
+    margin: 20px;
+}
+
+.cardImage{
+    width: 100%;
+}
+
+.businessTitle{
+    font-size: 16px;
+}
+
