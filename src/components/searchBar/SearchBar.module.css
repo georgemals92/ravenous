@@ -1,11 +1,11 @@
-.container {
+.wrapper {
     width: 100vw;
     height: 400px;
     margin-bottom: 35px;
     background-image: url("https://wallpapers.com/images/high/food-4k-anl1yr892h6ccjeb.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top 85% right 50%;
+    background-position: top 75% right 50%;
     background-color: #242424;
     opacity: 1;
     display: flex;
@@ -23,7 +23,7 @@
     margin-top: 20px;
 }
 
-.container input{
+.wrapper input{
     width: 45%;
     height: 40px;
     padding: 4px 4px 4px 8px;
@@ -35,7 +35,13 @@
     border: none;
 }
 
-.container button{
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.wrapper button{
     display: inline-block;
     background-color: goldenrod;
     width: 125px;
