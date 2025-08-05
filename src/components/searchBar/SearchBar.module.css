@@ -60,11 +60,20 @@ input:focus {
     width: 40%;
     margin-bottom: 30px;
     padding-bottom: 10px;
+    border: none;
     border-bottom: 3px solid #fff;
 }
 
 .searchOptions input[type="radio"]{
     display: none;
+}
+
+.searchOptions input[type="radio"]:checked + label {
+    color: goldenrod;
+}
+
+.searchOptions label {
+    border: none;
 }
 
 .searchOptions label{

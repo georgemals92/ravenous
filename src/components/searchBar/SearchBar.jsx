@@ -1,39 +1,50 @@
+import { useState } from 'react';
 import styles from './SearchBar.module.css'
 
 
 export default function SearchBar() {
+
+    const [term, setTerm] = useState('');
+    const [location, setLocation] = useState('');
+    const [searchByOption, setSearchByOption] = useState('best-match');
+
+    const handleLocationChange = (e) => {
+        const newLocation = e.target.value;
+        setLocation(newLocation);
+    };
+
+    const handleTermChange = (e) => {
+        const newTerm = e.target.value;
+        setTerm(newTerm);
+    };
+
+    const handleSearchByChange = (e) => {
+        const newSearchByOption = e.target;
+        setSearchByOption(newSearchByOption.id);
+        newSearchByOption.checked = true;
+    };
+     
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(`Sent request to YELP API: Business: ${term}, Location: ${location}, Search by: ${searchByOption}`); //for testing
+    };
+
     return(
-        <div className={styles.wrapper}>
-            <div className={styles.searchOptions}>
-                    <input type="radio" name="search-by" id="best-match" checked />
-                    <label htmlFor="best-match">Best Match</label>
-                    <input type="radio" name="search-by" id="highest-rated" />
-                    <label htmlFor="highest-rated">Highest Rating</label>
-                    <input type="radio" name="search-by" id="most-reviewed" />
-                    <label htmlFor="most-reviewed">Most Reviewed</label>
-            </div>  
+        <form className={styles.wrapper} onSubmit={handleSubmit}>
+            <fieldset className={styles.searchOptions}>
+                <input type="radio" name="search-by" id="best-match" defaultChecked onClick={handleSearchByChange}/>
+                <label htmlFor="best-match">Best Match</label>
+                <input type="radio" name="search-by" id="highest-rated" onClick={handleSearchByChange}/>
+                <label htmlFor="highest-rated">Highest Rating</label>
+                <input type="radio" name="search-by" id="most-reviewed" onClick={handleSearchByChange}/>
+                <label htmlFor="most-reviewed">Most Reviewed</label>
+            </fieldset>  
             <div className={styles.searchContainer}>
-                <input type="text" placeholder='Search for businesses' id="search-business" />
-                <input type="text" placeholder='Where?' id="search-location"/>
+                <input type="text" placeholder='Search for businesses' id="search-business" onChange={handleTermChange}/>
+                <input type="text" placeholder='Where?' id="search-location" onChange={handleLocationChange}/>
             </div>
-            <button>Let's Go</button>
-        </div>
+            <button type='submit'>Let's Go</button>
+        </form>
     );
 }
 
-/*
-
-const baseUrl = "'https://api.yelp.com/v3/businesses/search?"
-const term = encodeURIComponent(' ');
-const location = encodeURIComponent(' ');
-const sortByOption = ["best-match", "highest-rated", "most-reviewed"];
-const queryParams = `location=${term}&term=${term}&sort_by=${sortByOption}`;
-const options = {method: 'GET', headers: {accept: 'application/json'}};
-
-
-fetch('https://api.yelp.com/v3/businesses/search?location=new%20york&term=food&sort_by=best_match&limit=20', options)
-  .then(res => res.json())
-  .then(res => console.log(res))
-  .catch(err => console.error(err));
-
-*/
