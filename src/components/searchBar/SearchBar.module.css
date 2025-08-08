@@ -1,8 +1,21 @@
+header{
+    width: 100vw;
+    background-color: tomato;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    height: 52px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper {
     width: 100vw;
-    height: 400px;
+    height: 300px;
     margin-bottom: 35px;
-    background-image: url("https://wallpapers.com/images/high/food-4k-anl1yr892h6ccjeb.webp");
+    background-image: url("https://thumbs.dreamstime.com/z/watercolor-vegetable-seamless-pattern-elegant-food-repeat-background-kitchen-restaurant-menu-design-packaging-fabric-wallpaper-364016620.jpg?ct=jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top 75% right 50%;
@@ -28,7 +41,7 @@
     height: 40px;
     padding: 4px 4px 4px 8px;
     border-radius: 4px;
-    background: #fff;
+    background: #eee;
     color: #242424;
     font-size: 16px;
     font-weight: normal;
@@ -40,6 +53,7 @@ input:focus {
     border: none;
     outline: none;
     background-color: white;
+    color: tomato;
 }
 
 nput:-webkit-autofill {
@@ -68,7 +82,7 @@ nput:-webkit-autofill {
     margin-bottom: 30px;
     padding-bottom: 10px;
     border: none;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #242424;
 }
 
 .searchOptions input[type="radio"]{
@@ -76,15 +90,12 @@ nput:-webkit-autofill {
 }
 
 .searchOptions input[type="radio"]:checked + label {
-    color: goldenrod;
+    color: tomato;
 }
 
 .searchOptions label {
     border: none;
-}
-
-.searchOptions label{
-    color: #fff;
+    color: #242424;
     font-size: 18px;
     font-weight: bold;
 }
