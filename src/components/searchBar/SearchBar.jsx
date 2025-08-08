@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './SearchBar.module.css'
-import getBusinessData from '../../utils/getBusinessData';
 
 
 export default function SearchBar(props) {

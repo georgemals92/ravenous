@@ -8,13 +8,16 @@
     flex-direction: column;
     border-radius: 5px;
     width: 250px;
-    padding: 15px 10px;
-    margin: 8px;
+    height: 300px;
+    padding: 2px 12px;
+    margin: 2px;
 }
 
 .cardImage{
     width: 100%;
     border-radius: 2px;
+    height: 50%;
+    object-fit: cover;
 }
 
 h1{

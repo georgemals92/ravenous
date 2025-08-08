@@ -39,6 +39,13 @@
 input:focus {
     border: none;
     outline: none;
+    background-color: white;
+}
+
+nput:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #e0ffe0 inset !important;
+  box-shadow: 0 0 0 1000px #e0ffe0 inset !important;
+  color: #000 !important;
 }
 
 .wrapper button{

@@ -7,7 +7,7 @@ export default function BusinessList(props) {
             );
 
     // for testing
-    // console.log(listItems);
+    console.log(listItems);
     return(
         <div className={styles.wrapper}>
             {listItems}
