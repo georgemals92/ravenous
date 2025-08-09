@@ -6,7 +6,7 @@ const fetchBusinessData = async (location, term, sortByOption) => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      authorization: 'Bearer O9p8y3xo4eYBGO2UVrgCcAOKLqf13O2O_UIUuzI544T8xqIpQdCYMuIecE0Llh3Ag1MpIxkk0vGo-9yKwVCxO-cdFPbdYisFsZCISqYgKez4f6S-ul3jdgjRyp-TaHYx'
+      authorization: `Bearer ${import.meta.env.VITE_YELP_API_KEY}`
     }
   };
 
@@ -18,6 +18,7 @@ const fetchBusinessData = async (location, term, sortByOption) => {
       const jsonResponse = await response.json();
       if (!jsonResponse.businesses) return [];
       
+      console.log(jsonResponse.businesses);
       const businessData = jsonResponse.businesses.map((business) => {
       
       return { 
@@ -33,7 +34,6 @@ const fetchBusinessData = async (location, term, sortByOption) => {
         };
     });
     return businessData;
-    console.log(businessData, typeof businessData);
 
   }} catch(err) {
     console.error(err)
