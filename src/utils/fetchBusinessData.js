@@ -29,7 +29,7 @@ const fetchBusinessData = async (location, term, sortByOption) => {
       if (!jsonResponse.businesses) return [];
       
       // For testing purposes: To check the response data
-      console.log(jsonResponse.businesses);
+      await console.log(`Data fetched from API:`, jsonResponse.businesses);
       
       // Transforms response data to the businessData object structure for display by the card and listing components
       const businessData = jsonResponse.businesses.map((business) => {
@@ -43,7 +43,9 @@ const fetchBusinessData = async (location, term, sortByOption) => {
           // Question mark to make chaining optional and display missing data without errors
           category : business.categories[0]?.title,
           rating : business.rating,
-          reviewCount : business.review_count
+          reviewCount : business.review_count,
+          price: business.price,
+          isClosed: business.is_closed
         };
     });
     return businessData;

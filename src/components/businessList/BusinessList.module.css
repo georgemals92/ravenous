@@ -13,14 +13,25 @@
     display: none;
 }
 
-.buttonsContainer{
+.streamHeader {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     max-width: 1400px;
     margin: 30px auto 2px auto;
     padding: 2px 15px;
-    
+}
+
+.streamHeader .buttonsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.streamHeader h3 {
+    margin-left: 15px;
+    font-size: 22px;
+    color: tomato;
 }
 
 button{
