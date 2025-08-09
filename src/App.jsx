@@ -8,14 +8,16 @@ function App() {
   const [businessData, setBusinessData] = useState([]);
 
   const getBusinessData = async (location, term, searchByOption) => {
+    // Requires fetching data - marked as async function
     setBusinessData(await fetchBusinessData(location, term, searchByOption));
   };
 
+  // For testing purposes: To check if data where successfully transformed from the fetchBusinessData function
   console.log(businessData);
 
   return (
     <>
-      <SearchBar getBusinessData = {getBusinessData}/>
+      <SearchBar getBusinessData = {getBusinessData}/> {/* Function is passed as a prop to update state of the parent component from search component*/}
       <BusinessList businessData = {businessData}/>
     </>
   );
