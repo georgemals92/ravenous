@@ -19,6 +19,9 @@ function App() {
     <>
       <SearchBar getBusinessData = {getBusinessData}/> {/* Function is passed as a prop to update state of the parent component from search component*/}
       <BusinessList businessData = {businessData}/>
+      <BusinessList businessData = {businessData}/>
+      <BusinessList businessData = {businessData}/>
+      <BusinessList businessData = {businessData}/>
     </>
   );
 }

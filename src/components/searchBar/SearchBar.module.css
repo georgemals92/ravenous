@@ -64,7 +64,8 @@ nput:-webkit-autofill {
 
 .wrapper button{
     display: inline-block;
-    background-color: goldenrod;
+    background-color: tomato;
+    color: #e0ffe0;
     width: 125px;
     height: 50px;
     border: none;

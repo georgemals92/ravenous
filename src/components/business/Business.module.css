@@ -6,8 +6,9 @@
 .businessCard{
     display: flex;
     flex-direction: column;
+    flex: 0 0 260px;
     border-radius: 5px;
-    width: 280px;
+    width: 25%;
     height: 300px;
     padding: 12px 12px;
     margin: 4px 8px;

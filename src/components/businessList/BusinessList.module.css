@@ -1,8 +1,40 @@
 .wrapper{
-    justify-self: center;
-    width: 90%;
+    max-width: 1400px;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    place-content: center;
+    margin: 10px auto;
+    padding: 0 15px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE and Edge */
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.buttonsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 1400px;
+    margin: 30px auto 2px auto;
+    padding: 2px 15px;
+    
+}
+
+button{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #242424;
+    background-color: #fff;
+    color: #242424;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
 }

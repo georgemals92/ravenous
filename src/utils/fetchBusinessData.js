@@ -6,7 +6,7 @@ const fetchBusinessData = async (location, term, sortByOption) => {
   const yelpRequestEndpoint = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/";
   
   //Sort_by options directly formatted within searchbar component
-  const requestParams = `search?location=${encodeURIComponent(location)}&term=${encodeURIComponent(term)}&sort_by=${sortByOption}&limit=20`;
+  const requestParams = `search?location=${encodeURIComponent(location)}&term=${encodeURIComponent(term)}&sort_by=${sortByOption}&limit=50`;
   
   const options = {
     method: 'GET',
