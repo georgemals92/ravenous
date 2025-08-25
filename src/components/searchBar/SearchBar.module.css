@@ -48,19 +48,20 @@ header{
     border: none;
 }
 
-
 input:focus {
     border: none;
     outline: none;
-    background-color: white;
-    color: tomato;
+    background-color: #e3e3e3;
+    color: #242424;
 }
 
-nput:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #e0ffe0 inset !important;
-  box-shadow: 0 0 0 1000px #e0ffe0 inset !important;
-  color: #000 !important;
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+  box-shadow: 0 0 0 1000px #e3e3e3 inset !important;
+  -webkit-text-fill-color: #242424 !important;
+    caret-color: #242424;
 }
+
 
 .wrapper button{
     display: inline-block;
@@ -91,12 +92,11 @@ nput:-webkit-autofill {
 }
 
 .searchOptions input[type="radio"]:checked + label {
-    color: tomato;
+    font-weight: bolder;
 }
 
 .searchOptions label {
     border: none;
     color: #242424;
     font-size: 18px;
-    font-weight: bold;
 }

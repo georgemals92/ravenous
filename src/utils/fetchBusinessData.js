@@ -33,6 +33,12 @@ const fetchBusinessData = async (location, term, sortByOption) => {
       
       // Transforms response data to the businessData object structure for display by the card and listing components
       const businessData = jsonResponse.businesses.map((business) => {
+
+      let priceLevel = 0;
+      if (business.price && typeof business.price === 'string') {
+      priceLevel = business.price.length;
+      }
+
       return { 
           image: business.image_url,
           name : business.name,
@@ -44,7 +50,7 @@ const fetchBusinessData = async (location, term, sortByOption) => {
           category : business.categories[0]?.title,
           rating : business.rating,
           reviewCount : business.review_count,
-          price: business.price,
+          price: priceLevel,
           isClosed: business.is_closed
         };
     });

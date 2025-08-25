@@ -42,8 +42,8 @@ export default function BusinessList(props) {
             <div className={styles.streamHeader}>
                 <h3>{props.title}</h3>
                 <div className={styles.buttonsContainer}>
-                    <button onClick={() => handleScroll(-1120)}>&lt;</button>
-                    <button onClick={() => handleScroll(1120)}>&gt;</button>
+                    <button onClick={() => handleScroll(-1064)}>&lt;</button>
+                    <button onClick={() => handleScroll(1064)}>&gt;</button>
                 </div>
             </div>
             <div className={styles.wrapper} ref={wrapperRef}>

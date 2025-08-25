@@ -13,7 +13,7 @@ function App() {
   };
 
   const valueForMoneyFilter = business => 
-        (business.price === '\u20ac' || business.price === '\u20ac\u20ac') && parseFloat(business.rating) >= 4;
+        (business.price === 1 || business.price === 2) && parseFloat(business.rating) >= 4;
 
   const openNowFilter = business => 
         (!business.isClosed);

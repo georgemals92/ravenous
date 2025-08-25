@@ -6,7 +6,7 @@ export default function Business(props) {
         <div className= {styles.businessCard}>
             <img
                 className = {styles.cardImage} 
-                src= {props.data.image}
+                src= {props.data.image || 'https://tse2.mm.bing.net/th/id/OIP.F8BJS2eSnjyqvWlS4qfFjgHaE2?pid=Api&P=0&h=220'}
             />
             <h1 className = {styles.businessTitle}>{props.data.name}</h1>
             <div className={styles.cardBody}>
